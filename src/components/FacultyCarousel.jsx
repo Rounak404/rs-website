@@ -6,34 +6,34 @@ const facultyList = [
     extraDesignation: 'Vice Chancellor',
     designation: 'President , Technical Society',
     email: 'vc@vssut.ac.in',
-    image: '/faculties/dipakkumar.jpg'
+    image: '/faculties/dipakkumar.jpg',
   },
   {
     name: 'Prof Rakesh Roshan Dash',
-    extraDesignation: 'Dean Student Welfare',
+    extraDesignation: "Dean of Students' Welfare",
     designation: 'Technical Society',
-    email: 'deansw@vssut.ac.in',
-    image: '/faculties/rakesh.jpg'
+    email: 'trmahapatra_pe@vssut.ac.in',
+    image: '/faculties/rakesh.jpg',
   },
   {
-    name: 'Dr. Sudhansu Ranjan Das',
+    name: 'Dr. Trupti Ranjan Mohapatra',
     designation: 'Vice president , Technical Society',
     email: 'srdas_pe@vssut.ac.in',
-    image: '/faculties/srdas.jpg'
+    image: '/faculties/trmahapatra.jpg',
   },
   {
-    name: 'Dr. Debidasi Mohanty',
+    name: 'Dr. (Mrs.) Santi Behera',
     designation: 'Faculty Advisor',
-    email: 'ddmohanty_ee@vssut.ac.in',
-    image: '/faculties/debidasi.jpg'
+    email: 'db.santibehera@gmail.com',
+    image: '/faculties/-mrs.santi-behera.jpg',
   },
   {
-    name: 'Dr. Santosh Kumar Sahu',
+    name: 'Dr. Lopamudra Ghadei',
     designation: 'Faculty Advisor',
-    email: 'sksahu_me@vssut.ac.in',
-    image: '/faculties/sksahu.jpg'
+    email: 'lopa.180@gmail.com',
+    image: '/faculties/lopamudra-ghadai.jpg',
   },
-];
+]
 
 const FacultyCarousel = () => {
   const scrollContainerRef = useRef(null);
