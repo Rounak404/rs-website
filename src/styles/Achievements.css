@@ -154,6 +154,33 @@
   transform: scale(0.98) translateZ(10px);
 }
 
+/* Add styles for Top Highlights section */
+.top-highlights {
+  margin-bottom: 60px;
+}
+
+.top-highlights-title {
+  font-size: 2.5rem;
+  color: var(--accent-color);
+  text-align: center;
+  margin-bottom: 40px;
+  position: relative;
+  font-weight: 600;
+}
+
+.top-highlights-title::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100px;
+  height: 3px;
+  background: var(--accent-color);
+  border-radius: 2px;
+}
+
+/* Media Queries */
 @media (max-width: 1200px) {
   .achievements-title {
     font-size: 3rem;
@@ -192,6 +219,28 @@
 
   .achievement-description {
     font-size: 0.95rem;
+  }
+
+  /* Hide Top Highlights on tablets and mobile */
+  .top-highlights {
+    display: none !important;
+  }
+
+  /* Hide Top Highlights subtitle on tablets and mobile */
+  .achievements-subtitle {
+    display: none !important;
+  }
+}
+
+@media (max-width: 640px) {
+  /* Ensure Top Highlights is hidden on smaller devices */
+  .top-highlights {
+    display: none !important;
+  }
+
+  /* Ensure Top Highlights subtitle is hidden on smaller devices */
+  .achievements-subtitle {
+    display: none !important;
   }
 }
 

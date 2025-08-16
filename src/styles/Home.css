@@ -239,6 +239,11 @@ html, body {
   .footer-content p {
     font-size: 0.9rem;
   }
+
+  /* Hide achievements section on mobile */
+  .achievements {
+    display: none;
+  }
 }
 
 /* ---------- 576px and below ---------- */
