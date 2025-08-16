@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import ProjectCard from './ProjectCard'; // Assuming ProjectCard is in the same components folder
+import ProjectCard from './ProjectCard'; 
 
 const latestProjectsData = [
   {
@@ -33,7 +33,7 @@ const LatestProjectsSection = ({ onProjectClick }) => {
             <ProjectCard 
               key={project.id} 
               project={project} 
-              onProjectClick={onProjectClick} // Pass the click handler
+              onProjectClick={onProjectClick} 
               displayLearnMore={false} 
             />
           ))}
