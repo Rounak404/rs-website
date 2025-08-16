@@ -379,7 +379,7 @@ const Team = () => {
       projects: ['Robotic Arm', 'AI Vision'],
       // skills: ['Python', 'ROS', 'Computer Vision'],
       // bio: 'Specializes in AI and machine learning applications for robotics.',
-      image: '/teamimages/Manas.jpeg',
+      image: '/teamimages/manas2.jpg',
       github: '',
       linkedin: 'https://in.linkedin.com/in/manas-babu-247a27359',
       instagram: '',
