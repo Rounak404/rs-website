@@ -208,8 +208,7 @@ html, body {
 
   .workshop-carousel .legend,
   .competition-carousel .legend {
-    font-size: 14px;
-    padding: 10px;
+    display: none;
   }
 
   .latest-projects .projects-grid {
@@ -261,8 +260,7 @@ html, body {
 
   .workshop-carousel .legend,
   .competition-carousel .legend {
-    font-size: 12px;
-    padding: 8px;
+    display: none;
   }
 }
 
@@ -320,5 +318,9 @@ html, body {
   }
   .navbar {
     padding: 10px 10px; 
+  }
+    .workshop-carousel .legend,
+  .competition-carousel .legend {
+    display: none;
   }
 }
