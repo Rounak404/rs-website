@@ -96,6 +96,10 @@ section {
   .container {
     max-width: 800px;
   }
+  .section-title {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+  }
   
   section {
     padding: 60px 0;
@@ -108,8 +112,8 @@ section {
   }
   
   .section-title {
-    font-size: 2.2rem;
-    margin-bottom: 40px;
+    font-size: 2rem;
+    margin-bottom: 30px;
   }
   
   .btn {
@@ -120,7 +124,8 @@ section {
 
 @media (max-width: 576px) {
   .section-title {
-    font-size: 2rem;
+    font-size: 1.6rem;
+    margin-bottom: 20px;
   }
   
   .container {
