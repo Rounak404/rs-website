@@ -373,7 +373,7 @@ const Team = () => {
     {
       id: 33,
       name: 'Manas Babu',
-      role: 'ASSISTAND COORDINATOR',
+      role: 'ASSISTANT COORDINATOR',
       branch: 'Electronics and Telecommunication Engineering',
       year: '2',
       projects: ['Robotic Arm', 'AI Vision'],
@@ -968,7 +968,7 @@ const Team = () => {
     {
       id: 56,
       name: 'Prerana Priyadarsini Das',
-      role: 'Assistant Coordinator',
+      role: 'COORDINATOR',
       branch: 'Information Technology',
       year: '3',
       bio: 'Specializes in Data Science and Data Analysis',
