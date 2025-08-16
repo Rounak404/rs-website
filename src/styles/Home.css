@@ -1,3 +1,6 @@
+html, body {
+  overflow-x: hidden;
+}
 /* Hero Section */
 .hero {
   position: relative;
@@ -263,6 +266,10 @@
 
 /* ---------- 480px and below ---------- */
 @media (max-width: 480px) {
+
+  .projects-grid {
+    margin: 0px 3px;
+  }
   .achievement-content {
     padding: 15px;
   }
@@ -290,6 +297,27 @@
 
   .footer-content p {
     font-size: 0.8rem;
+  }
+
+  .projects-grid {
+  
+    margin: 0px 3px;
+  }
+
+  
+}
+
+@media (max-width: 380px) {
+  .latest-projects .projects-grid {
+    grid-template-columns: 1fr;
+    padding: 0 50px;
+  }
+  .navbar-logo { 
+    font-size: 1.3rem;
+    margin-left: 5px; 
+  }
+  .navbar {
+    padding: 10px 10px; 
   }
     .workshop-carousel .legend,
   .competition-carousel .legend {

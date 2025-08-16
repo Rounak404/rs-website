@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import '../styles/AllProjects.css'
 import ProjectCard from '../components/ProjectCard'
@@ -6,6 +6,7 @@ import projects from '../data/projectdata'
 
 const AllProjects = () => {
   const [selectedProject, setSelectedProject] = useState(null)
+
 
   const handleProjectClick = (project) => {
     setSelectedProject(project)
