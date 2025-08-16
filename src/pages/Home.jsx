@@ -269,7 +269,6 @@ const Home = () => {
 
       <FacultyCarousel />
 
-
       <LatestProjectsSection onProjectClick={handleProjectClick} />
 
       <section className="workshops">
