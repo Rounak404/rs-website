@@ -87,58 +87,80 @@ const Home = () => {
 
   const competitions = [
     {
+      id: 1,
+      name: 'FTBI Startup Bootcamp 2025',
+      year: '2025',
+      achievement: '',
+      image: '/compimages/ftbi_event.webp',
+    },
+    {
+      id: 2,
+      name: ' India Mobile Congress (IMC) 2025, Yashobhoomi Convention Centre, New Delhi',
+      year: '2025',
+      achievement: '',
+      image: '/compimages/imc.jpeg',
+    },
+    {
       id: 3,
       name: 'Smart India Hackathon',
       year: '2024',
       achievement: '',
-      image:  '/compimages/sih3.jpg'
-    },
-    {
-      id: 2,
-      name: 'Innovision at NIT Rourkela',
-      year: '2024',
-      achievement: '',
-      image: '/compimages/inno7.jpg'
-    },
-    {
-      id: 1,
-      name: 'RosCon India',
-      year: '2024',
-      achievement: '',
-      image: '/compimages/roscon3.jpg'
+      image: '/compimages/sih3.jpg',
     },
     {
       id: 4,
+      name: 'Innovision at NIT Rourkela',
+      year: '2024',
+      achievement: '',
+      image: '/compimages/inno7.jpg',
+    },
+    {
+      id: 5,
+      name: 'RosCon India',
+      year: '2024',
+      achievement: '',
+      image: '/compimages/roscon3.jpg',
+    },
+    {
+      id: 6,
       name: 'MIO Conclave',
       year: '2023',
       achievement: '',
-      image: '/compimages/mio2.jpg'
-    }
-  ];
+      image: '/compimages/mio2.jpg',
+    },
+  ]
 
   const achievements = [
     {
       id: 1,
-      title: "E-Yantra Robotics Competition",
-      year: "2024",
-      description: "Finalist – E-Yantra Robotics Competition (IIT Bombay).",
-      category: "Competition"
+      title: 'E-Yantra Robotics Competition',
+      year: '2024',
+      description: 'Finalist – E-Yantra Robotics Competition (IIT Bombay).',
+      category: 'Competition',
     },
     {
       id: 2,
-      title: "National Science Day",
-      year: "2025",
-      description: "Winner – Science Exhibition, National Science Day, BRIC",
-      category: "Competition"
+      title: 'National Science Day',
+      year: '2025',
+      description: 'Winner – Science Exhibition, National Science Day, BRIC',
+      category: 'Competition',
     },
     {
       id: 3,
-      title: "Patent for the Base Frame of our Autonomous Mobile Robot",
-      year: "2025",
-      description: " this patented base frame serves as a foundational platform — ideal for understanding the core working of autonomous mobile robots and their wide range of applications.",
-      category: "Research"
-    }
-  ];
+      title: 'Patent for the Base Frame of our Autonomous Mobile Robot',
+      year: '2025',
+      description:
+        ' this patented base frame serves as a foundational platform — ideal for understanding the core working of autonomous mobile robots and their wide range of applications.',
+      category: 'Research',
+    },
+    {
+      id: 4,
+      title: 'FTBI Startup Bootcamp 2025 Achievement  ',
+      description:
+        'secured the 3rd Prize at the Startup Bootcamp 2025, organized by FTBI, NIT Rourkela in collaboration with VSSUT, Burla ',
+      category: 'Competition',
+    },
+  ]
 
   const handleProjectClick = (project) => {
     setSelectedProject(project);
