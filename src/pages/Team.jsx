@@ -22,21 +22,7 @@ const Team = () => {
 
   const teamMembers = [
     //Sophomores
-    {
-      id: 3,
-      name: 'Abhay Kumar Sahani',
-      role: '',
-      branch: 'Civil Engineering',
-      year: '2',
-      projects: ['Robotic Arm', 'AI Vision'],
-      // skills: ['Python', 'ROS', 'Computer Vision'],
-      // bio: 'Specializes in AI and machine learning applications for robotics.',
-      image: '/teamimages/Abhay.jpg',
-      github: 'https://github.com/redabhay',
-      linkedin:
-        'https://www.linkedin.com/in/abhay-sahani-9073b4296?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app',
-      instagram: '',
-    },
+    
     {
       id: 32,
       name: 'Abinash Dash',
@@ -80,20 +66,6 @@ const Team = () => {
       github: 'https://github.com/Aditya-Swarup26',
       linkedin:
         'https://www.linkedin.com/in/aditya-swarup-khuntia-1b3a64311?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app',
-      instagram: '',
-    },
-    {
-      id: 18,
-      name: 'Anibes Mohanty',
-      role: '',
-      branch: 'Electrical Engineering',
-      year: '2',
-      projects: ['Robotic Arm', 'AI Vision'],
-      // skills: ['Python', 'ROS', 'Computer Vision'],
-      // bio: 'Specializes in AI and machine learning applications for robotics.',
-      image: '/teamimages/Anibes.jpg',
-      github: '',
-      linkedin: '',
       instagram: '',
     },
     {
@@ -213,20 +185,6 @@ const Team = () => {
       instagram: '',
     },
     {
-      id: 26,
-      name: 'Bikash Barik',
-      role: '',
-      branch: 'Electrical and Electronics Engineering',
-      year: '2',
-      projects: ['Robotic Arm', 'AI Vision'],
-      // skills: ['Python', 'ROS', 'Computer Vision'],
-      // bio: 'Specializes in AI and machine learning applications for robotics.',
-      image: '/teamimages/Bikash.jpg',
-      github: '',
-      linkedin: '',
-      instagram: '',
-    },
-    {
       id: 49,
       name: 'Chandini Suhagini',
       role: '',
@@ -313,20 +271,7 @@ const Team = () => {
         'https://www.linkedin.com/in/gayatrirani-samantaray-69a128362?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app',
       instagram: 'https://www.instagram.com/_gayatrirani_/',
     },
-    {
-      id: 40,
-      name: 'Hari Shah',
-      role: '',
-      branch: 'Electronics and Telecommunication Engineering',
-      year: '2',
-      projects: ['Robotic Arm', 'AI Vision'],
-      // skills: ['Python', 'ROS', 'Computer Vision'],
-      // bio: 'Specializes in AI and machine learning applications for robotics.',
-      image: '/teamimages/Hari.jpg',
-      github: 'https://github.com/hhis1',
-      linkedin: 'http://www.linkedin.com/in/hari-shah-2b8797343',
-      instagram: '',
-    },
+    
     {
       id: 55,
       name: 'Jyotiraditya Biswal',
@@ -400,21 +345,6 @@ const Team = () => {
       instagram: '',
     },
     {
-      id: 11,
-      name: 'Nityananda Giri',
-      role: '',
-      branch: 'Computer Science and Engg.',
-      year: '2',
-      projects: ['Robotic Arm', 'AI Vision'],
-      // skills: ['Python', 'ROS', 'Computer Vision'],
-      // bio: 'Specializes in AI and machine learning applications for robotics.',
-      image: '/teamimages/NityanandaGiri.jpg',
-      github: 'https://github.com/Nitin119-web',
-      linkedin:
-        'https://www.linkedin.com/in/nityananda-giri-716151361?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app',
-      instagram: 'https://www.instagram.com/nitinn.__01/',
-    },
-    {
       id: 2,
       name: 'Peeyush Priyadarshan Rana',
       role: '',
@@ -445,21 +375,6 @@ const Team = () => {
       instagram: '',
     },
     {
-      id: 36,
-      name: 'Pritam Swain',
-      role: '',
-      branch: 'Electronics and Telecommunication Engineering',
-      year: '2',
-      projects: ['Robotic Arm', 'AI Vision'],
-      // skills: ['Python', 'ROS', 'Computer Vision'],
-      // bio: 'Specializes in AI and machine learning applications for robotics.',
-      image: '/teamimages/Pritam.jpg',
-      github: '',
-      linkedin:
-        'https://www.linkedin.com/in/pritam-swain-180289327?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app',
-      instagram: '',
-    },
-    {
       id: 8,
       name: 'Remit Kumar Patra',
       role: '',
@@ -472,21 +387,6 @@ const Team = () => {
       github: 'https://github.com/NotRemit',
       linkedin: 'https://www.linkedin.com/in/remit-patra',
       instagram: '',
-    },
-    {
-      id: 20,
-      name: 'Roshan Dang',
-      role: '',
-      branch: 'Electrical Engineering',
-      year: '2',
-      projects: ['Robotic Arm', 'AI Vision'],
-      // skills: ['Python', 'ROS', 'Computer Vision'],
-      // bio: 'Specializes in AI and machine learning applications for robotics.',
-      image: '/teamimages/Roshan2.jpg',
-      github: '',
-      linkedin: '',
-      instagram:
-        'https://www.instagram.com/roshan_x_69?igsh=MWk2dWJrNDVibWxuZg==',
     },
     {
       id: 47,
@@ -795,34 +695,6 @@ const Team = () => {
       linkedin: 'www.linkedin.com/in/swagatika-bhairab-sahu-59a34a34a',
       instagram:
         'https://www.instagram.com/_sswagatikka?utm_source=qr&igsh=enYzM2RseWpuM2Zu',
-    },
-    {
-      id: 12,
-      name: 'Swaraj Soubhagya Khandai',
-      role: '',
-      branch: 'Computer Science and Engg.',
-      year: '2',
-      projects: ['Robotic Arm', 'AI Vision'],
-      // skills: ['Python', 'ROS', 'Computer Vision'],
-      // bio: 'Specializes in AI and machine learning applications for robotics.',
-      image: '/teamimages/Swaraj.jpg',
-      github: '',
-      linkedin: '',
-      instagram: 'https://www.instagram.com/_9swaraj?igsh=ajZha3AzYzA0dm1x',
-    },
-    {
-      id: 53,
-      name: 'Trisha Samal',
-      role: '',
-      branch: 'Production Engineering',
-      year: '2',
-      projects: ['Robotic Arm', 'AI Vision'],
-      // skills: ['Python', 'ROS', 'Computer Vision'],
-      // bio: 'Specializes in AI and machine learning applications for robotics.',
-      image: '/teamimages/Trisha.jpg',
-      github: 'https://github.com/trishglitch1',
-      linkedin: '',
-      instagram: '',
     },
 
     //pre-final year
