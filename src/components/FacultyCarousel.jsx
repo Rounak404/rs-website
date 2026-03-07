@@ -2,38 +2,38 @@ import React, { useState, useRef, useEffect, useCallback } from 'react';
 
 const facultyList = [
   {
-    name: 'Prof.(Dr.) Dipak Kumar Sahoo',
-    extraDesignation: 'Vice Chancellor',
-    designation: 'President , Technical Society',
-    email: 'vc@vssut.ac.in',
-    image: '/faculties/dipakkumar.jpg',
+    name: "Prof.(Dr.) Dipak Kumar Sahoo",
+    extraDesignation: "Vice Chancellor",
+    designation: "President , Technical Society",
+    email: "vc@vssut.ac.in",
+    image: "/faculties/dipakkumar.jpg",
   },
   {
-    name: 'Prof Rakesh Roshan Dash',
+    name: "Prof Rakesh Roshan Dash",
     extraDesignation: "Dean of Students' Welfare",
-    designation: 'Technical Society',
-    email: 'trmahapatra_pe@vssut.ac.in',
-    image: '/faculties/rakesh.jpg',
+    designation: "Technical Society",
+    email: "rrdash_ce@vssut.ac.in",
+    image: "/faculties/rakesh.jpg",
   },
   {
-    name: 'Dr. Trupti Ranjan Mohapatra',
-    designation: 'Vice president , Technical Society',
-    email: 'srdas_pe@vssut.ac.in',
-    image: '/faculties/trmahapatra.jpg',
+    name: "Dr. Trupti Ranjan Mohapatra",
+    designation: "Vice president , Technical Society",
+    email: "trmahapatra_pe@vssut.ac.in , truptiranjan01@gmail.com",
+    image: "/faculties/trmahapatra.jpg",
   },
   {
-    name: 'Dr. (Mrs.) Santi Behera',
-    designation: 'Faculty Advisor',
-    email: 'db.santibehera@gmail.com',
-    image: '/faculties/-mrs.santi-behera.jpg',
+    name: "Dr. (Mrs.) Santi Behera",
+    designation: "Faculty Advisor",
+    email: "db.santibehera@gmail.com",
+    image: "/faculties/-mrs.santi-behera.jpg",
   },
   {
-    name: 'Dr. Lopamudra Ghadei',
-    designation: 'Faculty Advisor',
-    email: 'lopa.180@gmail.com',
-    image: '/faculties/lopamudra-ghadai.jpg',
+    name: "Dr. Lopamudra Ghadei",
+    designation: "Faculty Advisor",
+    email: "lopa.180@gmail.com",
+    image: "/faculties/lopamudra-ghadai.jpg",
   },
-]
+];
 
 const FacultyCarousel = () => {
   const scrollContainerRef = useRef(null);
