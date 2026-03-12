@@ -1,28 +1,30 @@
-import React, { useState } from 'react';
-import MemberCard from '../components/MemberCard';
-import '../styles/Team.css';
-import { FaGithub, FaLinkedin , FaInstagram } from 'react-icons/fa';
-
-
+import React, { useState } from 'react'
+import MemberCard from '../components/MemberCard'
+import '../styles/Team.css'
+import { FaGithub, FaLinkedin, FaInstagram } from 'react-icons/fa'
 
 const Team = () => {
-  const [selectedMember, setSelectedMember] = useState(null);
-  const [activeFilter, setActiveFilter] = useState(null);
+  const [selectedMember, setSelectedMember] = useState(null)
+  const [activeFilter, setActiveFilter] = useState(null)
 
-  const yearFilters = ['Final Years', 'Pre Final Years', 'Sophomores'];
+  const yearFilters = ['Final Years', 'Pre Final Years', 'Sophomores']
 
   const getYearGroup = (filter) => {
     switch (filter) {
-      case 'Sophomores': return ['2'];
-      case 'Pre Final Years': return ['3'];
-      case 'Final Years': return ['4'];
-      default: return [];
+      case 'Sophomores':
+        return ['2']
+      case 'Pre Final Years':
+        return ['3']
+      case 'Final Years':
+        return ['4']
+      default:
+        return []
     }
-  };
+  }
 
   const teamMembers = [
     //Sophomores
-    
+
     {
       id: 32,
       name: 'Abinash Dash',
@@ -271,7 +273,7 @@ const Team = () => {
         'https://www.linkedin.com/in/gayatrirani-samantaray-69a128362?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app',
       instagram: 'https://www.instagram.com/_gayatrirani_/',
     },
-    
+
     {
       id: 55,
       name: 'Jyotiraditya Biswal',
@@ -699,7 +701,6 @@ const Team = () => {
 
     //pre-final year
 
-    
     {
       id: 67,
       name: 'Ambika Prasad Dora',
@@ -1114,71 +1115,100 @@ const Team = () => {
         'https://www.linkedin.com/in/tarini-prasad-dash-808629279?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app',
       instagram: '',
     },
+    {
+      id: 101,
+      name: 'Manoj Sahu',
+      role: 'Specialize in Graphic Design and Arduino',
+      branch: 'Metallurgical and Materials Engineering',
+      year: '3',
+      image: 'prefinal/manoj.png',
+      github: '',
+      linkedin: '',
+      instagram: '',
+    },
+    {
+      id: 102,
+      name: 'Raj Kumar Sahoo',
+      role: '',
+      branch: 'Computer Science and Engeneering',
+      year: '3',
+      image: 'prefinal/raj.jpeg',
+      github: '',
+      linkedin: '',
+      instagram: '',
+    },
 
-    // last id is 99 for anyone developing start from 100 next
+    // last id is 102 for anyone developing start from 103 next
   ]
 
   const filteredMembers = activeFilter
-    ? teamMembers.filter(member => getYearGroup(activeFilter).includes(member.year))
-    : teamMembers;
+    ? teamMembers.filter((member) =>
+        getYearGroup(activeFilter).includes(member.year)
+      )
+    : teamMembers
 
   return (
-  <div className="team-page">
-    <div className="container">
-      <h1 className="section-title">Our Team</h1>
+    <div className="team-page">
+      <div className="container">
+        <h1 className="section-title">Our Team</h1>
 
-      {selectedMember ? (
-        <div className="member-detail">
-          <button className="back-btn" onClick={() => setSelectedMember(null)}>
-            &larr; Back to Team
-          </button>
-          <div className="detail-content">
-            <img 
-              src={selectedMember.image} 
-              alt={selectedMember.name} 
-              className="detail-image"
-            />
-            <div className="detail-info">
-              <h2>{selectedMember.name}</h2>
-              <p className="role">{selectedMember.role}</p>
+        {selectedMember ? (
+          <div className="member-detail">
+            <button
+              className="back-btn"
+              onClick={() => setSelectedMember(null)}
+            >
+              &larr; Back to Team
+            </button>
+            <div className="detail-content">
+              <img
+                src={selectedMember.image}
+                alt={selectedMember.name}
+                className="detail-image"
+              />
+              <div className="detail-info">
+                <h2>{selectedMember.name}</h2>
+                <p className="role">{selectedMember.role}</p>
 
-              <div className="detail-section">
-                <h3>About</h3>
-                <p>{selectedMember.bio}</p>
-              </div>
+                <div className="detail-section">
+                  <h3>About</h3>
+                  <p>{selectedMember.bio}</p>
+                </div>
 
-              <div className="detail-section">
-                <h3>Academic Information</h3>
-                <p><strong>Branch:</strong> {selectedMember.branch}</p>
-                <p><strong>Year:</strong> {selectedMember.year}</p>
-              </div>
+                <div className="detail-section">
+                  <h3>Academic Information</h3>
+                  <p>
+                    <strong>Branch:</strong> {selectedMember.branch}
+                  </p>
+                  <p>
+                    <strong>Year:</strong> {selectedMember.year}
+                  </p>
+                </div>
 
-              
-
-              <div className="detail-section">
-                <h3>Connect</h3>
-                <div className="social-links">
-                  {selectedMember.github && (
-                    <a 
-                      href={selectedMember.github} 
-                      target="_blank" 
-                      rel="noopener noreferrer" 
-                      className="icon-link"
-                    >
-                      <FaGithub size={24} />
-                    </a>
-                  )}
-                  {selectedMember.linkedin && (
-                    <a 
-                      href={selectedMember.linkedin} 
-                      target="_blank" 
-                      rel="noopener noreferrer" 
-                      className="icon-link"
-                    >
-                      <FaLinkedin size={24} />
-                    </a>
-                  )}
-                  {/* {selectedMember.instagram && (
+                <div className="detail-section">
+                  <h3>Connect</h3>
+                  <div className="social-links">
+                    {selectedMember.github && (
+                      <a
+                        href={selectedMember.github}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="icon-link"
+                      >
+                        <FaGithub size={24} />
+                      </a>
+                    )}
+                    {selectedMember.linkedin && (
+                      <a
+                        href={selectedMember.linkedin}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="icon-link"
+                      >
+                        <FaLinkedin size={24} />
+                      </a>
+                    )}
+                    {/* {selectedMember.instagram && (
                     <a 
                       href={selectedMember.instagram} 
                       target="_blank" 
@@ -1188,53 +1218,51 @@ const Team = () => {
                       <FaInstagram size={24} />
                     </a>
                   )} */}
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-      ) : (
-        <>
-          <div className="filter-buttons">
-            {yearFilters.map(filter => (
-              <button 
-                key={filter} 
-                onClick={() => setActiveFilter(filter)} 
-                className={activeFilter === filter ? 'active-filter' : ''}
+        ) : (
+          <>
+            <div className="filter-buttons">
+              {yearFilters.map((filter) => (
+                <button
+                  key={filter}
+                  onClick={() => setActiveFilter(filter)}
+                  className={activeFilter === filter ? 'active-filter' : ''}
+                >
+                  {filter}
+                </button>
+              ))}
+              <button
+                onClick={() => setActiveFilter(null)}
+                className={!activeFilter ? 'active-filter' : ''}
               >
-                {filter}
+                All
               </button>
-            ))}
-            <button 
-              onClick={() => setActiveFilter(null)} 
-              className={!activeFilter ? 'active-filter' : ''}
-            >
-              All
-            </button>
-          </div>
+            </div>
 
-          <div className="team-grid">
-           {(activeFilter 
-              ? filteredMembers 
-              : [...teamMembers].sort((a, b) => {
-                  const order = { '4': 0, '3': 1, '2': 2 }; // Priority: Final -> Pre-Final -> Sophomore
-                  return order[a.year] - order[b.year];
-                })
-            ).map(member => (
-    <         MemberCard 
-                key={member.id} 
-               member={member} 
-                onClick={() => setSelectedMember(member)}
-              />
-            ))}
-          </div>
-        </>
-      )}
+            <div className="team-grid">
+              {(activeFilter
+                ? filteredMembers
+                : [...teamMembers].sort((a, b) => {
+                    const order = { 4: 0, 3: 1, 2: 2 } // Priority: Final -> Pre-Final -> Sophomore
+                    return order[a.year] - order[b.year]
+                  })
+              ).map((member) => (
+                <MemberCard
+                  key={member.id}
+                  member={member}
+                  onClick={() => setSelectedMember(member)}
+                />
+              ))}
+            </div>
+          </>
+        )}
+      </div>
     </div>
-  </div>
-);
+  )
+}
 
-};
-
-export default Team;
-
+export default Team
