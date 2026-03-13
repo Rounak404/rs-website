@@ -1118,8 +1118,9 @@ const Team = () => {
     {
       id: 101,
       name: 'Manoj Sahu',
-      role: 'Specialize in Graphic Design and Arduino',
+      role: '',
       branch: 'Metallurgical and Materials Engineering',
+      bio: 'Specialize in Graphic Design and Arduino',
       year: '3',
       image: 'prefinal/manoj.png',
       github: '',
